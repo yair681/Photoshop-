@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קורס פוטושופ למתחילים - למד לעצב כמו מקצוען</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS מקצועי - הכל כאן */
+        body {
+            font-family: 'Heebo', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        .main-content {
+            padding: 40px 0;
+        }
+
+        .cta-box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .cta-box h2 {
+            font-size: 2em;
+            color: #1a73e8;
+        }
+        .price {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #008000;
+            margin: 10px 0;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #008000;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #006400;
+        }
+        .timer-box {
+            background-color: #ffc107;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        .features {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .features h3 {
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature-item .icon {
+            font-size: 2em;
+            color: #1a73e8;
+            margin-left: 20px;
+        }
+        .feature-item p {
+            margin: 0;
+        }
+
+        footer {
+            background: #333;
+            color: #f0f2f5;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>הגיע הזמן ללמוד פוטושופ!</h1>
+            <p>הקורס המקיף למתחילים שילמד אותך לעצב כמו מקצוען.</p>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="cta-box">
+                <h2>קורס פוטושופ למתחילים</h2>
+                <div class="price">
+                    <span class="old-price">₪499</span> ₪299
+                </div>
+                <p><strong>20% הנחה ל-24 השעות הקרובות!</strong></p>
+                <div class="timer-box">
+                    <span id="countdown">ההטבה מסתיימת בעוד: 23:59:59</span>
+                </div>
+                <a href="#" class="cta-button">הצטרף עכשיו ותתחיל לעצב!</a>
+            </div>
+
+            <div class="features">
+                <h3>מה תקבלו בקורס?</h3>
+                <div class="feature-item">
+                    <span class="icon">💻</span>
+                    <p><strong>גישה מלאה לכל השיעורים:</strong> למדו בקצב שלכם, מכל מקום ובכל זמן.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">🎨</span>
+                    <p><strong>פרויקטים מעשיים:</strong> תרגלו על פרויקטים אמיתיים ובנו תיק עבודות משלכם.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">💬</span>
+                    <p><strong>קבוצת תמיכה:</strong> קבלו עזרה ותשובות ממומחים ומתלמידים נוספים.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">🎓</span>
+                    <p><strong>תעודה רשמית:</strong> קבלו תעודה בסיום הקורס שתוכלו להציג ללקוחות.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 קורס "עיצוב בקליק". כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script>
+        // זהו קוד JavaScript שמוסיף טיימר לספירה לאחור.
+        function startCountdown(duration, display) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = "ההטבה מסתיימת בעוד: " + hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let display = document.querySelector('#countdown');
+            let twentyFourHours = 24 * 60 * 60;
+            startCountdown(twentyFourHours, display);
+        };
+    </script>
+</body>
+</html>
